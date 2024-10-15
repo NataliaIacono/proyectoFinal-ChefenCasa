@@ -1,0 +1,159 @@
+.bodyVistaFavoritos{
+    min-height: 94vh;
+    position: relative;
+}
+
+.contenedorCardsFavoritos {
+    width: 70%; /* Cambia a 100% para que ocupe todo el ancho disponible */
+    display: flex; /* Activa el modelo de caja flexible */
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en varias líneas */
+    margin: 0 auto; /* Centra el contenedor si es necesario */
+    margin-top: 3vh
+}
+
+.contenedorCardFavorito {
+    width: 30vw; /* Ancho del 25% menos margen, para 4 cards en pantallas grandes */
+    background-color: #d7d6d6;
+    border-radius: 10px;
+    align-items: start; /* Centra los elementos horizontalmente */
+    display: flex;
+    flex-direction: column;
+
+    padding: 1vw;
+    margin-top: 1vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    margin-bottom: 1vw;
+    position: relative;
+    box-shadow: 10px 6px 10px rgb(100, 100, 100);
+}
+
+.datosCompletosFavoritos {
+    display: flex;
+}
+
+.datosTituloImagen {
+    width: 15vw;
+}
+
+.tituloRecetaFavorito {
+    margin-bottom: 10%;
+}
+
+.imagenRecetaFavorito {
+    width: 100%;
+    max-width: 15vw;
+}
+
+.descripcionBotones{
+    width: 20vw;
+    margin-left: 1vw;
+}
+
+.descripcionFavoritos {
+    width: 12vw;
+    background-color: #f9c039;
+    border-radius: 10px;
+    padding: 1vw;
+}
+
+.ingredientesFavoritos{
+    font-size: 15px;
+}
+
+.tiempoCoccionFavorito {
+    font-size: medium;
+}
+
+.botonesFavoritos {
+    text-align: start;
+    margin-top: 20%;
+}
+
+.botonNotaFavoritos {
+    color: white;
+    background-color: #e73827;
+    width: 100px;
+    box-shadow: 2px 2px 2px rgb(100, 100, 100);
+    padding: 5px;
+    border: none;
+    border-radius: 50px;
+}
+
+.corazonInfoFavorito {
+    margin-right: 5%;
+    margin-bottom: 5%;
+    font-size: medium;
+
+    display: flex;
+    flex-direction: row; /* Coloca los elementos en una columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+
+.corazonFavorito {
+    border: none;
+    font-size: x-large;
+    background-color: #d7d6d6;
+    margin-left: 1vw;
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 1200px) { /* Ajusta este valor según tus necesidades */
+    .contenedorCardFavorito {
+        width: 80vw; /* Ancho del 50% menos margen, para 2 cards en pantallas pequeñas */
+        margin-bottom: 2vh;
+    }
+    .descripcionFavoritos {
+        width: 33vw;
+    }
+    .datosTituloImagen {
+        width: 30vw;
+    }
+    .imagenRecetaFavorito {
+        width: 100%;
+        max-width: 28vw;
+    }
+}
+
+@media (max-width: 650px) { /* Ajusta este valor según tus necesidades */
+    .tituloRecetaFavorito {
+        font-size: medium; /* Ancho del 50% menos margen, para 2 cards en pantallas pequeñas */
+    }
+    .ingredientesFavoritos {
+        font-size: small;
+    }
+    .tiempoCoccionFavorito {
+        font-size: small;
+    }
+    .botonesFavoritos {
+        text-align: center;
+        margin-top: 20%;
+        display: flex;
+        flex-direction: column;
+    }
+    .corazonInfoFavorito {
+        flex-direction: column;
+    }
+
+    .botonNotaFavoritos {
+        margin-bottom: 1vh;
+    }
+
+    .corazonFavorito {
+        margin-bottom: 1vh;
+    }
+}
+
+.espacioBlanco {
+    width: 100vw;
+    height: 6vh;
+    background-color: white;
+}
+
+.no-favoritos{
+    margin: auto;
+    background-color: #cdccca;
+    font-size: medium;
+    border-radius: 10px;
+    padding: 10px;
+}

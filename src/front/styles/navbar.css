@@ -1,0 +1,76 @@
+/* Navbar público */
+.navbar {
+    height: 10vh;
+    
+    padding: 10px; /*Reduce el padding para pantallas pequeñas */
+    background-color: #f9c039;
+    display: flex; /* Usa flexbox */
+    align-items: center; /* Centra verticalmente */
+     /* position: relative Necesario para posicionar el contenido del dropdown */
+    
+}
+
+.containerNavbar {
+    margin-left: 15vw;
+    margin-right: 15vw;
+    display: flex;
+    justify-content: space-between; /* Espacio entre logo y botón */
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    /*display: flex*/;
+   /* justify-content: flex-end*/;
+}
+
+.botonIniciarSesion {
+    background-color: #cdcccd;
+    width: auto; /* Cambia a auto para que se ajuste al contenido */
+    min-width: 80px; /* Establece un ancho mínimo */
+    box-shadow: 2px 2px 2px rgb(100, 100, 100);
+    padding: 10px;
+    border: none;
+    border-radius: 100px;
+}
+
+.LogoChefEnCasa {
+    width: auto; /* Cambia a auto para que se ajuste al contenido */
+    max-width: 40%; /* Limita el ancho máximo al 20% del contenedor */
+    height: auto; /* Mantiene la proporción del logo */
+}
+
+/* Media Queries para pantallas más pequeñas */
+@media (max-width: 900px) {
+    .LogoChefEnCasa {
+        max-width: 150px; /* Ajusta el tamaño máximo en pantallas pequeñas */
+        width: auto; /* Permite que se ajuste automáticamente */
+    }
+    .containerNavbar {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .botonIniciarSesion {
+        min-width: 70px; /* Ajusta el ancho mínimo en pantallas pequeñas */
+        padding: 8px; /* Reduce el padding en pantallas pequeñas */
+    }
+    /*.dropdown {
+        margin-right: 5vw;
+    }*/
+}
+
+/* Navbar Privado */
+
+.dropdown {
+    background-color: #f9c039;
+    width: 10vh;
+    border: none;
+    height: 3vh;
+    
+
+}
+
+.dropdown-navbar {
+    left:-70px !important;
+    top: -31px !important;
+    
+    margin-top: 0 !important;
+    
+    
+}

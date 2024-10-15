@@ -1,0 +1,118 @@
+.bodyRecetaPrivada {
+  height: 94vh;
+}
+
+.contenidoRecetaCompleta {
+  display: flex;
+  width: 85vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  height: 80vh;
+}
+
+.tituloRecetaCompleta {
+  width: 85vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  margin-top: 3vh;
+}
+
+.imagenBotonRecetaCompleta {
+  margin-right: 3vh;
+}
+
+.ImagenRecetaCompleta {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  max-width: 25vw;
+}
+
+.ingredientesRecetaCompleta {
+  width: 20vw;
+  background-color: #f9c039;
+  border-radius: 7px;
+  padding: 1vw;
+  margin-right: 2vw;
+  font-size: medium;
+  height: fit-content;
+  max-height: 80%;
+  overflow-y: auto;
+}
+
+.contenedorPreparacion {
+  width: 30vw; /* Ajusta este ancho según sea necesario */
+  max-height: 80%; /* Establece la altura máxima, restando el espacio ocupado por otros elementos */
+  overflow-y: auto; /* Agrega scroll vertical si el contenido excede la altura máxima */
+}
+
+.contenedorIngredientesYPreparacion {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2vh;
+}
+
+.btn-receta {
+  background-color: #ff7f00;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.buttonBottom {
+  display: flex;
+  justify-content: center;
+  margin-left: 20em;
+}
+
+.btn-receta:hover {
+  background-color: #e06b00;
+}
+
+.preparacion {
+  font-size: 20px;
+  max-height: 80vh;
+}
+
+.iconoRelojRecetaCompleta {
+  font-size: large;
+  margin-top: auto;
+}
+
+/* Responsividad */
+@media (max-width: 1200px) {
+  .contenidoRecetaCompleta {
+    width: 95vw;
+    padding-left: 2vh;
+    padding-right: 2vh;
+  }
+  .imagenBotonRecetaCompleta {
+    margin-right: 2vw;
+    margin-left: 8vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  .contenidoRecetaCompleta {
+    flex-direction: column;
+    text-align: center;
+  }
+  .ImagenRecetaCompleta {
+    max-width: 70vw;
+  }
+  .imagenBotonRecetaCompleta {
+    margin: 0;
+  }
+  .contenedorIngredientesYPreparacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+  }
+  .ingredientesRecetaCompleta {
+    width: 70vw;
+  }
+  .contenedorPreparacion {
+    width: 70vw;
+  }
+}
