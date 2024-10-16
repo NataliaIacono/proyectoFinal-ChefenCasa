@@ -70,7 +70,7 @@ export const ChatBot = () => {
                     method: 'POST',
                     headers: {
                         "Content-Type": 'application/json',
-                        "Authorization": 'Bearer ' + apiKeyOpenChat
+                        "Authorization": 'Bearer' + apiKeyOpenChat
                     },
                     body: JSON.stringify({
                         model: 'gpt-3.5-turbo', // Módulo gratuito
