@@ -1,13 +1,11 @@
-.bodyRecetaPrivada {
-  height: 94vh;
-}
+
 
 .contenidoRecetaCompleta {
   display: flex;
   width: 85vw;
   padding-left: 10vw;
   padding-right: 10vw;
-  height: 80vh;
+  height: auto;
 }
 
 .tituloRecetaCompleta {
@@ -91,6 +89,7 @@
     margin-right: 2vw;
     margin-left: 8vw;
   }
+  
 }
 
 @media (max-width: 1000px) {

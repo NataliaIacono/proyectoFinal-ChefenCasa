@@ -403,9 +403,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 					if (response.ok) {
 						alert("session closed correctly");
 						history.push('/');
-					} else {
-						alert("Error closing session");
-					}
+					} 
 				} catch (error) {
 					console.error("Error closing session", error);
 				}
