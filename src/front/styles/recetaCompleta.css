@@ -1,4 +1,6 @@
-
+.bodyRecetaPrivada{
+  min-height: 94vh;
+}
 
 .contenidoRecetaCompleta {
   display: flex;
@@ -33,13 +35,13 @@
   margin-right: 2vw;
   font-size: medium;
   height: fit-content;
-  max-height: 80%;
+  max-height: 70vh;
   overflow-y: auto;
 }
 
 .contenedorPreparacion {
   width: 30vw; /* Ajusta este ancho según sea necesario */
-  max-height: 80%; /* Establece la altura máxima, restando el espacio ocupado por otros elementos */
+  max-height: 70vh; /* Establece la altura máxima, restando el espacio ocupado por otros elementos */
   overflow-y: auto; /* Agrega scroll vertical si el contenido excede la altura máxima */
 }
 
