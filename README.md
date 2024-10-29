@@ -1,13 +1,28 @@
-# WebApp boilerplate with React JS and Flask API
+# Chef en Casa 🍲
 
-Build web applications using React.js for the front end and python/flask for your backend API.
+Chef en Casa es una aplicación de recetas gourmet que permite a los usuarios explorar, guardar y organizar recetas. Con una interfaz intuitiva y personalizada, los usuarios pueden buscar recetas, agregar sus favoritas, escribir notas personalizadas y planificar su menú semanal.
 
-- Documentation can be found here: https://start.4geeksacademy.com/starters/react-flask
-- Here is a video on [how to use this template](https://www.loom.com/share/f37c6838b3f1496c95111e515e83dd9b)
-- Integrated with Pipenv for package managing.
-- Fast deployment to heroku [in just a few steps here](https://start.4geeksacademy.com/backend/deploy-heroku-posgres).
-- Use of .env file.
-- SQLAlchemy integration for database abstraction.
+## Tabla de Contenidos
+- [Funcionalidades](#funcionalidades)
+- [Tecnologías](#tecnologías)
+- [Instalación](#instalación)
+- [Estructura del Proyecto](#estructura-del-proyecto)
+- [Equipo de Desarrollo](#contacto)
+
+## Funcionalidades
+- **Buscar y Visualizar Recetas**: Búsqueda de recetas a través de la API de Spoonacular.
+- **Guardar Favoritos**: Los usuarios pueden agregar recetas a su lista de favoritas para acceso rápido.
+- **Añadir Notas Personalizadas**: Permite que cada usuario escriba notas personales en cada receta.
+- **Organización del Menú Semanal**: Los usuarios pueden planificar sus comidas diarias para almuerzo y cena.
+
+## Tecnologías
+- **Frontend**: HTML, CSS, JavaScript, React
+- **Backend**: Python, Flask, SQLAlchemy
+- **Gestión de Estado**: Flux
+- **API Externa**: Spoonacular API
+- **Base de Datos**: Postgress para desarrollo, y SQLAlchemy ORM
+
+
 
 ### 1) Installation:
 
@@ -70,12 +85,33 @@ Every Github codespace environment will have **its own database**, so if you're 
 1. Install the packages: `$ npm install`
 2. Start coding! start the webpack dev server `$ npm run start`
 
-## Publish your website!
+## Estructura del Proyecto 
 
-This boilerplate it's 100% read to deploy with Render.com and Heroku in a matter of minutes. Please read the [official documentation about it](https://start.4geeksacademy.com/deploy).
+## Estructura del Proyecto
 
-### Contributors
+```plaintext
+proyectoFinal-ChefenCasa/
+├── app.py                    # Archivo principal de la aplicación Flask
+├── config.py                 # Configuración de la aplicación
+├── models/                   # Modelos de SQLAlchemy
+│   ├── user.py
+│   ├── recetas.py
+│   └── favoritos.py
+├── routes/                   # Rutas de la API
+│   ├── auth.py
+│   ├── recetas.py
+│   └── favoritos.py
+├── static/                   # Archivos estáticos (CSS, JS, imágenes)
+├── templates/                # Plantillas HTML
+├── .env                      # Variables de entorno
+├── requirements.txt          # Dependencias de Python
+└── README.md                 # Documentación del proyecto
 
-This template was built as part of the 4Geeks Academy [Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) by [Alejandro Sanchez](https://twitter.com/alesanchezr) and many other contributors. Find out more about our [Full Stack Developer Course](https://4geeksacademy.com/us/coding-bootcamps/part-time-full-stack-developer), and [Data Science Bootcamp](https://4geeksacademy.com/us/coding-bootcamps/datascience-machine-learning).
 
-You can find other templates and resources like this at the [school github page](https://github.com/4geeksacademy/).
+## Equipo de Desarrollo
+
+- **Natalia Iacono** - Desarrolladora Full Stack  
+- **Alejandra Aguirre** - Desarrolladora Full Stack  
+- **Carlos Molina** - Desarrollador Full Stack
+ 
+
